@@ -1,13 +1,15 @@
 
+
+
+#This method takes any number and prints out the prime numbers in range
+#2<input number 
 def primes(num):
-    counter = 1
-    results=[] #the array to hold all the primes of 1 - num
-    while(counter <= num):
-        if(counter % 1 == 0 and counter % num == 0):
-            results.append(counter)
 
-        counter+=1
-    return results
+   for num in range(2,num):
+    if all(num%i!=0 for i in range(2,num)):
+       print (num)
 
-
+       
+        
+primes(10)
             
